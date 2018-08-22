@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name=viewport content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <title>Image Resizer</title>
+  </head>
+  <body>
+    <div class="text-center text-muted">
+        <h3>Image Resizer</h3>
+    </div>
+    <div class="text-center text-muted">
+        <h5>Select the file that you want to have it resize</h5>
+    </div>
+    <div class="text-center file-selector">
+        <label class="custom-file">
+            <input type="file" id="file" class="custom-file-input" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);">
+            <span class="custom-file-control btn btn-info"></span>
+        </label>
+    </div>
+    <div class="text-center disp-image" style="display:none;">
+            <img id="blah" src="#" alt="your image" class="yolo-test"/>
+    </div>
+    <div class="text-center" style="padding-top: 25px;">
+            <button type="button" class="btn btn-info sel-otr-file disp-image" style="display:none;">Select Other Image File</button>
+    </div>
+    <div class="form-group setNumber" style="height: 70px; padding-top:25px">
+      <input type="number" class="form-control" id="imgHeight" placeholder="height" style="position: absolute;left: 10px; width:48%;">
+      <input type="number" class="form-control" id="imgWidth" placeholder="width" style="position: absolute;right: 10px; width:48%;">
+    </div>
+    <div class="form-group text-center">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="">
+          IOS Store Image Resizer
+        </label>
+        <!-- <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" value="">
+            Android Notification image
+          </label>
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" value="">
+            Android App Icon
+          </label> -->
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn btn-info" id="resizeIt">Save Image</button>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.$ = window.jQuery = require('./js/vendor/jquery-3.3.1.min.js');
+    </script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+  </body>
+</html>

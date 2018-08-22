@@ -1,0 +1,8 @@
+.custom-file-control::before {
+    content: "Browse";
+}
+.yolo-test::before {
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+    content: 'x';
+}
