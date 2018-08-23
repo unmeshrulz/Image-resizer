@@ -6,3 +6,8 @@
     font-family: Arial, sans-serif;
     content: 'x';
 }
+
+.full-width {
+    width:100%;
+    padding-right: 2em;
+}

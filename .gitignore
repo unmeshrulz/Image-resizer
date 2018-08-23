@@ -3770,3 +3770,8 @@ node_modules/yauzl/.travis.yml
 node_modules/yauzl/README.md
 node_modules/yauzl/index.js
 node_modules/yauzl/package.json
+node_modules/q/queue.js
+node_modules/q/CHANGES.md
+node_modules/q/LICENSE
+node_modules/q/q.js
+.gitignore

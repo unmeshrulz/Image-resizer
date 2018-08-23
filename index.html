@@ -30,18 +30,26 @@
       <input type="number" class="form-control" id="imgWidth" placeholder="width" style="position: absolute;right: 10px; width:48%;">
     </div>
     <div class="form-group text-center">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" value="">
-          IOS Store Image Resizer
-        </label>
-        <!-- <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" value="">
-            Android Notification image
-          </label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" value="">
-            Android App Icon
-          </label> -->
+        <span class="full-width">
+            <label class="form-check-label">
+                <input class="form-check-input" name="optradio" type="radio" value="IOS"> IOS Store Image Resizer
+            </label>
+        </span>
+        <span class="full-width">
+            <label class="form-check-label">
+                <input class="form-check-input" name="optradio" type="radio" value="ANI"> Android Notification image
+            </label>
+        </span>
+        <span class="full-width">
+            <label class="form-check-label">
+                <input class="form-check-input" name="optradio" type="radio" value="AAI"> Android App Icon
+            </label>
+        </span>
+        <span class="full-width">
+                <label class="form-check-label">
+                    <input class="form-check-input" name="optradio" type="radio" value="CUS"> Custom
+                </label>
+            </span>
     </div>
     <div class="text-center">
         <button type="button" class="btn btn-info" id="resizeIt">Save Image</button>
